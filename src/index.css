@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(196, 216, 242);
+}
+
+.wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.searchField {
+  margin-bottom: 15px;
+}

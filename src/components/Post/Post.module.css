@@ -1,0 +1,12 @@
+.postBlock {
+  border: 2px solid firebrick;
+  background-color: beige;
+  margin: 15px 0;
+  padding: 12px;
+}
+
+.buttonsWrapper {
+  display: flex;
+  column-gap: 15px;
+  margin: 10px 0;
+}

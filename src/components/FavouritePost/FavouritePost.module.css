@@ -1,0 +1,10 @@
+.postBlock {
+  border: 2px solid firebrick;
+  background-color: beige;
+  margin: 15px 0;
+  padding: 12px;
+}
+
+.postDescription {
+  padding: 10px 0;
+}
