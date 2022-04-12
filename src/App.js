@@ -1,4 +1,4 @@
-import { TextField } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 import React, { useState } from "react";
 
 import { PostsContainer, SelectionSort } from "./components";
@@ -10,10 +10,8 @@ const App = () => {
   const [posts, setPosts] = useState([]);
   const [selectedSort, setSelectedSort] = useState("");
 
-  const { searchValue, setSearchValue, filteredArr } = useFilter(
-    posts,
-    "title"
-  );
+  const { searchValue, filteredArr, resetSearch, changeSearchValue } =
+    useFilter(posts, "title");
 
   const sortedPosts = useSort(filteredArr, selectedSort);
 
@@ -47,9 +45,10 @@ const App = () => {
           label="Search"
           variant="standard"
           value={searchValue}
-          onChange={(e) => setSearchValue(e.target.value)}
+          onChange={changeSearchValue}
           placeholder="search todo"
         />
+        <Button onClick={resetSearch}>Reset</Button>
       </div>
 
       <div>

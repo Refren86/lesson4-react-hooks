@@ -8,3 +8,8 @@
 .postDescription {
   padding: 10px 0;
 }
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+}
